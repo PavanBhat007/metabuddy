@@ -34,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   padding: 16px;
   background: linear-gradient(120deg, rgba(124, 93, 255, 0.16), rgba(158, 240, 255, 0.12));
   border: 1px solid var(--border);
@@ -149,8 +150,8 @@ body {
   border: 1px solid var(--border);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.03);
-  width: 90%;
   overflow-wrap: break-word;
+  overflow: hidden;
 }
 
 .list-item .name {
@@ -158,6 +159,7 @@ body {
   font-size: 13px;
   margin: 0 0 2px;
   overflow-wrap: break-word;
+  width: 90%;
 }
 
 .list-item .content {
@@ -221,4 +223,20 @@ button:active {
 .empty {
   color: var(--muted);
   font-size: 12px;
+}
+
+.logo {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(158, 240, 255, 0.4);
+  box-shadow: 0 0 20px 5px rgba(158, 240, 255, 0.3);
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
